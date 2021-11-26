@@ -1,0 +1,45 @@
+.imagem-carrossel {
+    object-fit: cover;
+    object-position: 0 90%;
+    height: 400px;
+}
+
+.imagem-carrossel2 {
+    object-fit: cover;
+    height: 400px;
+}
+
+.texto-titulo {
+    font-family: 'Pacifico', cursive;
+}
+
+.cor-identidade {
+    color: darkred!important; /*usar essa tag important somente em último caso, sobrepõe todo o css padrão*/
+}
+
+.cor-botao {
+    background-color: darkred;
+    color: white;
+}
+
+.cor-bordacard {
+    border-color: darkred;
+}
+
+.card-imagem {
+    object-fit: cover;
+    height: 200px;
+}
+
+.card-estilo {
+    max-width: 18rem;
+}
+
+
+.jumbotron-personalizado {
+        margin-top: 4rem;
+        padding: 2rem 1rem;
+        margin-bottom: 1rem;
+        background-color: #e9ecef;
+        border-radius: 0.3rem;
+}
