@@ -8,7 +8,7 @@ class Comerciante extends Model
 {
     protected $table = 'comerciantes';
     public $timestamps = false; 
-    protected $fillable = ['nome', 'nome_img'];
+    protected $fillable = ['nome', 'desc_com', 'nome_img'];
     
 
 }

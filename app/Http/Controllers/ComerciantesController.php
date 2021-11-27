@@ -28,7 +28,7 @@ class comerciantesController extends Controller
         return view('comerciantes.view', compact('comerciantes', 'mensagem'));
 
         
-    } //fim da função index
+    } //fim da classe view
 
 
     public function create()
@@ -44,12 +44,14 @@ class comerciantesController extends Controller
         $request->nome_img->move(public_path('/img'), $nomeImagem);
         
         $nome = $request->nome;
+        $descCom = $request->desc_com;
         $comerciante = Comerciante::create(['nome' =>$nome,
+         'desc_com' => $descCom,
          'nome_img' => $nomeImagem]);
         $request->session()->flash('mensagem', "Comerciante {$comerciante->nome} cadastrado com sucesso");
         
 
-        return redirect('/comerciantes');
+        return redirect('/');
     }
 
     public function destroy(Request $request)
@@ -59,6 +61,6 @@ class comerciantesController extends Controller
         
         $request->session()->flash('mensagem', "O Comerciante $request->nome foi removido");
 
-        return redirect('/comerciantes');
+        return redirect('/');
     }
 } 

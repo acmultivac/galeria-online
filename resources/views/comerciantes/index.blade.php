@@ -28,8 +28,8 @@ Comerciantes do Bairro
         <img src="{{ asset('img/'.$comerciante->nome_img) }}" class="card-img-top card-imagem" alt="{{ $comerciante->nome_img }}">
         <div class="card-body">
             <h5 class="card-title">{{ $comerciante->nome }}</h5>
-            <p class="card-text">{{ $comerciante->nome_img}}</p>
-            <a href="#" class="btn cor-botao">preços</a>
+            <p class="card-text">{{ $comerciante->desc_com}}</p>
+            <a href="#" class="btn cor-botao">Saiba mais</a>
             <form method="post" action="/comerciantes/remover/{{ $comerciante->id }}"
               onsubmit="return confirm('Tem certeza que deseja exlcuiir o comerciante?')">
             @csrf

@@ -11,6 +11,8 @@
             <div class="form-group">
                 <label for="nome" class="">Nome do Comerciante</label>
                 <input type="text" class="form-control" name="nome" id="nome">
+                <label for="desc_com" class="">Breve Descrição do Comércio</label>
+                <input type="text" class="form-control mb-2" name="desc_com" id="desc_com">
                 <label for="nome_img">Adicionar Img</label>
                 <input type="file" class="custom-file-input" name="nome_img" id="nome_img">
                 <!--<input type="text" class="form-control" name="nome_img" id="nome_img">-->

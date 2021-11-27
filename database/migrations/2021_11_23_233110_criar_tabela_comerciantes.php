@@ -16,6 +16,7 @@ class CriarTabelaComerciantes extends Migration
         Schema::create('comerciantes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nome');
+            $table->string('desc_com');
             $table->string('nome_img');
         });
     }
