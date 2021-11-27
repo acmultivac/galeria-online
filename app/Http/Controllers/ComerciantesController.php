@@ -18,6 +18,18 @@ class comerciantesController extends Controller
         
     } //fim da função index
 
+    public function view(Request $request)
+    {        
+        $comerciantes = Comerciante::query()->orderBy('nome')->get();
+
+        $mensagem = $request->session()->get('mensagem');
+        $request->session()->remove('mensagem'); 
+
+        return view('comerciantes.view', compact('comerciantes', 'mensagem'));
+
+        
+    } //fim da função index
+
 
     public function create()
     {

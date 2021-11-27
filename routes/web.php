@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ComerciantesController@view');
 
 Route::get('/comerciantes', 'ComerciantesController@index');
 Route::get('/comerciantes/criar', 'ComerciantesController@create');
