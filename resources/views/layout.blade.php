@@ -23,7 +23,7 @@
             <a class="nav-link active" aria-current="page" href="#">Início</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Comércios</a>
+            <a class="nav-link" href="#comercios">Comércios</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Quem Somos</a>

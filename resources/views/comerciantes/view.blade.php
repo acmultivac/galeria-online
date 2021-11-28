@@ -20,7 +20,7 @@ Comerciantes do Bairro
 
 
 
-<section class="container-fluid bg-light" id="receitas">
+<section class="container-fluid bg-light" id="comercios">
   <div class="row justify-content-center">
     @foreach ($comerciantes as $comerciante)
        
